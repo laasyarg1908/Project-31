@@ -91,7 +91,10 @@ function showDrop()
 {
     if (frameCount % 50 === 0)
     {
-        drops.push(new Raindrop(random(0,400),random(0,400)));
+        for (var i = 0; i< maxDrops; i++)
+            {
+                drops.push(new Raindrop(random(0,400),random(0,400)));
+            }
     }
 }
    
